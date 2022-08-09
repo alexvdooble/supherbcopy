@@ -1,0 +1,52 @@
+// out: ../../build/css/responsive.css, sourceMap: true
+
+@media only screen and (max-width:1280px) {
+}
+/** End of 1280px **/
+
+@media only screen and (max-width:1024px) {
+}
+/** End of 1024px **/
+
+@media only screen and (max-width:992px) {
+	body {
+		padding-top: 70px;
+	}
+	.footer-col-nav {
+		.entry-title {
+			&:after {
+				display: inline-block;
+				font-family: 'FontAwesome';
+				content: '\f107';
+				transition: all 300ms ease;
+			}
+		}
+		.footer-nav {
+			display: none;
+		}
+		&.active {
+			.entry-title {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
+/** End of 992px **/
+
+@media only screen and (max-width:576px) {
+}
+/** End of 576px **/
+
+@media only screen and (max-width:320px) {
+}
+/** End of 320px **/
+
+@media print {
+	a[href]:after {
+		content: none !important;
+	}
+}
+/** End of print **/
+
